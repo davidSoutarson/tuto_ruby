@@ -1,17 +1,25 @@
 class Animal
   attr_accessor :nom 
-#method initialize executer de nom  
-  def initialize(non)
+  
+  def initialize(nom)
     @nom = nom 
   end 
-#method utilsation du nom 
+end
+#la class chat herite de la class Animal 
+class Chat < Animal
   def parler 
-    puts "je suis un animal qui s'appelle #{nom}"
+    puts "#{nom}: Miaou!"
   end  
 end 
+#la class chien herite de la class Animal 
+class Chien < Animal
+  def parler 
+    puts "#{nom}: Ouaf!"
+  end
+end
 #variable pour atribuant les parametre () a nom
-mon_chien = Animal.new("Bob le chien")
-mon_chat = Animal.new("Adeline le chat")
+mon_chien = Chien.new("Bob le chien")
+mon_chat = Chat.new("Adeline le chat")
 #execution de la method parler 
 mon_chat.parler
 mon_chien.parler
