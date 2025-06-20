@@ -1,33 +1,35 @@
+# Définition de la classe Utilisateur
 class Utilisateur
+  # Création d'accesseurs pour lire et écrire les attributs
   attr_accessor :prenom, :nom, :langage_prefere 
 
-  #methode sans parametre
+  # Méthode sans paramètre : retourne le prénom et le nom de l'utilisateur
   def nom_complet 
     prenom + " " + nom
   end
 
-  #methode avec parametre
+  # Méthode avec un paramètre : vérifie si l'utilisateur aime un certain langage
   def aime_le(langage)
     if langage == langage_prefere
       "oui :)"
     else
-      "Non:("
+      "Non :("
     end
   end
-
 end 
 
+# Création d'un utilisateur Bob et initialisation de ses attributs
 bob = Utilisateur.new
 bob.prenom = "Bob"
 bob.nom = "Lenon"
 bob.langage_prefere = "Python"
 
+# Création d'un autre utilisateur Paul
 paul = Utilisateur.new 
 paul.prenom = "Paul"
-paul.nom = "fane"
+paul.nom = "Fane"
 paul.langage_prefere = "Ruby"
 
-puts"Est-ce que"+ paul.nom_complet + " aime le ruby ?\n" +paul.aime_le("Ruby")+"\n"+
-   "Est-ce que"+ bob.nom_complet + " aime le ruby ?\n" +bob.aime_le("Ruby")
-
-
+# Affichage des préférences en langage de chaque utilisateur
+puts "Est-ce que " + paul.nom_complet + " aime le Ruby ?\n" + paul.aime_le("Ruby") + "\n" +
+     "Est-ce que " + bob.nom_complet + " aime le Ruby ?\n" + bob.aime_le("Ruby")
