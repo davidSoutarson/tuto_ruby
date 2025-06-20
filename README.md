@@ -1,3 +1,9 @@
+![GitHub last commit](https://img.shields.io/github/last-commit/davidSoutarson/tuto_ruby)
+![GitHub repo size](https://img.shields.io/github/repo-size/davidSoutarson/tuto_ruby)
+![GitHub](https://img.shields.io/github/license/davidSoutarson/tuto_ruby)
+![Made with Ruby](https://img.shields.io/badge/Made%20with-Ruby-red.svg)
+
+
 # 🧠 Projet d'apprentissage Ruby – THP
 
 > 📚 Projet personnel réalisé durant ma formation **The Hacking Project (THP)**  
@@ -49,15 +55,15 @@ tuto-pour-coder/
 
 ## 🧩 Ordre suggéré d’apprentissage
 
-1. `methode.rb` – Bases des méthodes
+1. `methode.rb` – Découverte des méthodes
 2. `boucles.rb` – Répétition et itération
-3. `manip.rb` – Manipuler les données
+3. `manip.rb` – Bases de la manipulation de données
 4. `classe.rb` – Créer ses propres objets
-5. `composition.rb` – Objets dans d'autres objets
-6. `heritage.rb` – POO avancée
-7. `tp_amis_avec.rb` – Mise en pratique
-8. `voyage.rb` – Mini scénario
-9. `jeu.rb` – Projet final
+5. `composition.rb` – Imbrication d’objets
+6. `heritage.rb` – Héritage et POO avancée
+7. `tp_amis_avec.rb` – Travail pratique sur les relations
+8. `voyage.rb` – Simulation simple de voyages
+9. `jeu.rb` – jeu.rb – Mise en pratique globale avec un mini-jeu
 
 ---
 
